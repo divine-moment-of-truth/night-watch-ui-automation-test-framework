@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "12"
+services:
+  - xvfb
+dist: trusty
+addons:
+  chrome: stable
+before_install:
+  - google-chrome-stable --headless --disable-gpu --remote-debugging
+script:
+  - xvfb-run npm test

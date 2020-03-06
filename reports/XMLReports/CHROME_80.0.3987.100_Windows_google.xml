@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="google"
+    errors="1" failures="1" hostname="" id="" package="google" skipped="0"
+    tests="1" time="6.961" timestamp="">
+  
+    <testcase name="Google advanced search: Elon Musk" classname="google" time="6.961" assertions="4">
+
+    
+
+    
+
+      <failure message="UI: Elon Musk is set in the query input in 5000ms - expected [0;32m&#34;is visible&#34;[0m but got: [0;31m&#34;element could not be located&#34;[0m [0;90m(5122ms)[0m">    at Object.Google advanced search: Elon Musk (C:\Users\andrew.short\Documents\Software\NightWatchJS_1\tests\google.js:37:20)
+    at processTicksAndRejections (internal/process/task_queues.js:89:5)</failure>
+
+    
+      <failure message="    at Object.Google advanced search: Elon Musk (C:\Users\andrew.short\Documents\Software\NightWatchJS_1\tests\google.js:37:20)">    at processTicksAndRejections (internal/process/task_queues.js:89:5)</failure>
+      <error message="Error while running &#34;visible&#34; command: UI: Elon Musk is set in the query input in 5000ms - expected [0;32m&#34;is visible&#34;[0m but got: [0;31m&#34;element could not be located&#34;[0m [0;90m(5122ms)[0m" type="error">    at processTicksAndRejections (internal/process/task_queues.js:89:5)</error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+      [0;31m  NoSuchElementError: An error occurred while running .isVisible() command on &lt;#searchform input[name=&#34;q&#34;][value=&#34;${mainQuery}&#34;]&gt;: undefined; undefined
+   {&#34;sessionId&#34;:&#34;681489f5f4a05bef43d8915989ea069c&#34;,&#34;status&#34;:0,&#34;value&#34;:[]}[0m
+[0;90m       at processTicksAndRejections (internal/process/task_queues.js:89:5)[0m
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

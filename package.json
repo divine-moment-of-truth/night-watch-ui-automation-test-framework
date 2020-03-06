@@ -1,0 +1,25 @@
+{
+  "name": "nightwatchjs_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightwatch.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "dependencies": {
+    "nightwatch": "^1.3.2"
+  },
+  "scripts": {
+    "debug": "node --inspect-brk node_modules\\nightwatch\\bin\\nightwatch",
+    "test": "nightwatch.js",
+    "nightwatch": "nightwatch -c tests/nightwatch.conf.js -e chrome,firefox,safari"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^79.0.2",
+    "nightwatch": "^1.3.4"
+  }
+}
+
